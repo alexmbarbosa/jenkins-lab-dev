@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   nginx:
-    container_name: nginx-lab.dev
+    container_name: nginx-lab
     build:
       context: ./nginx
       dockerfile: Dockerfile
@@ -18,7 +18,7 @@ services:
     networks:
       - jenkins
   jenkins:
-    container_name: jenkins-lab.dev
+    container_name: jenkins-lab
     build:
       context: ./jenkins
       dockerfile: Dockerfile

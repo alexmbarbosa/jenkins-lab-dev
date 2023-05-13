@@ -1,0 +1,3 @@
+# Template for .env file
+NGINX_HOST="jenkinslab.local"
+NGINX_PORT=80

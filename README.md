@@ -18,25 +18,43 @@ This project has the following resources:
 - [Jenkins container](https://www.jenkins.io/doc/book/installing/docker/)
 - [NGINX container](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-docker/)
 
+---
 #### **How to use this project?**
 
-1. Clone this repository
+1. Clone this repository.
 
 ```shell
 git clone https://github.com/alexmbarbosa/jenkins-lab-dev.git
 ```
 
-2. Create `.env` copying the `env_template` variables, changing according to your preferences:
-
-- NGINX_HOST="<your_hostname>"
-- NGINX_PORT=<your_nginx_port>
+#### **Project Structure**
 
 ```shell
-source .env
+.
+├── docker-compose.yml
+├── jenkins
+│   └── Dockerfile
+└── nginx
+    ├── Dockerfile
+    └── files
+        ├── conf.d
+        │   ├── default.conf
+        │   └── jenkins.conf
+        └── nginx.conf
 ```
 
-3. Build/run this docker environment
+2. In virtualhost file `jenkins.conf`, change the server_name to your preference name:
+
+```conf
+server_name jenkins.local;
+```
+
+> **Note:** *Make sure you have this hostname in your `/etc/hosts`*.
+
+3. Build/run this docker environment.
 
 ```shell
 docker-compose up -d --build
 ```
+
+___

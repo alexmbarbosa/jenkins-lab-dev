@@ -57,4 +57,13 @@ server_name jenkins.local;
 docker-compose up -d --build
 ```
 
+```shell
+docker-compose ps
+
+NAME                IMAGE                                              COMMAND                  SERVICE             CREATED             STATUS              PORTS
+jenkins-lab         docker.io/library/jenkins-lab-dev-jenkins:latest   ""                       jenkins             47 seconds ago      Up 46 seconds       8080/tcp, 50000/tcp
+nginx-lab           docker.io/library/jenkins-lab-dev-nginx:latest     "nginx -g daemon off;"   nginx               47 seconds ago      Up 46 seconds       80/tcp
+```
+
 ___
+

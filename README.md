@@ -65,6 +65,10 @@ jenkins-lab         docker.io/library/jenkins-lab-dev-jenkins:latest   ""       
 nginx-lab           docker.io/library/jenkins-lab-dev-nginx:latest     "nginx -g daemon off;"   nginx               47 seconds ago      Up 46 seconds       80/tcp
 ```
 
+Finally, you are able to access your jenkins lab by **`http://<your_server_name>`**:
+
+![Jenkins Lab](./img/jenkins.png "jenkins-lab")
+
 ___
 
 ### **Author:** Alex Mendes

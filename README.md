@@ -67,3 +67,13 @@ nginx-lab           docker.io/library/jenkins-lab-dev-nginx:latest     "nginx -g
 
 ___
 
+### **Author:** Alex Mendes
+
+**LinkedIn:** https://www.linkedin.com/in/mendesalex/
+
+### **References:**
+
+- https://github.com/jenkinsci/docker
+- https://www.jenkins.io/doc/book/installing/docker/
+- https://www.jenkins.io/doc/book/system-administration/reverse-proxy-configuration-nginx/
+- https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
